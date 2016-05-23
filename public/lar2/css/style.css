@@ -1,0 +1,390 @@
+
+
+
+/*----------------------------------------------------Reset CSS------------------------------------------*/
+html,body,div,span,h1,h2,h3,h4,h5,h6,
+p,a,font,img,b,u,i,ol,ul,li,fieldset,form {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
+}
+body {
+font-size: 62.5%;
+font-family: tahoma, arial, sans-serif;
+line-height: 2em;
+/*background: #0e0e0e url(images/body_bg.jpg) no-repeat left top;*/
+}
+ol,ul {list-style: none;} /*Bỏ đi mấy cái list style của ol và ul*/
+ 
+a {
+text-decoration: none; /*Bỏ hiệu ứng gạch chân*/
+}
+ 
+a img {
+border: none; /*Bỏ border img nếu dùng ảnh làm link*/
+}
+ 
+img {
+vertical-align: center;
+}
+ 
+:focus {
+outline:0;
+}
+.uppercase {
+text-transform: uppercase;
+}
+ 
+.bold {
+font-weight: bold;
+}
+.block{
+	display: block;
+}
+.red{
+	color:red;
+}
+
+/*CSSSSSSSSSSS*/
+
+body{
+	margin: 0 auto;
+	  font-family: OpenSans-Light,arial, sans-serif;
+	/*font-size: 1em;*/
+}
+@font-face {
+    font-family: OpenSans-Light;
+    src: url('../font/OpenSans/OpenSans-Light.ttf');
+}
+@font-face {
+    font-family: OpenSans-Italic;
+    src: url('../font/OpenSans/OpenSans-Italic.ttf');
+}
+@font-face {
+    font-family:OpenSans-Bold;
+    src: url('../font/OpenSans/OpenSans-Bold.ttf');
+}
+.left{
+	text-align: left;
+}
+.right{
+	text-align: right;
+}
+/*--------------------------------------------------Begin < 768px---------------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+
+.header h1 {
+    color: #ccac86;
+    font-size: 20px;
+    font-family: OpenSans-Light;
+}
+.header ul{
+	    margin-top: -17px;
+		padding-top:0 !important;
+}
+.header ul li{
+	line-height: 28px !important;
+}
+.header ul li span{
+font-size: 1em !important;
+    font-family: OpenSans-Italic;
+    color: #bebebd;
+}
+.header-right .input input,.header-right .select .forrm-group .form-control{
+	margin-bottom: 6px;
+}
+.header{
+	/*margin-bottom: 1em;*/
+	position: relative;
+	/*background: none !important;*/
+	padding-top: 0 !important;
+	padding-bottom: 10px;
+	background: url('../images/bg_nenhuongle1.png') no-repeat;
+	background-size: 100% 100%;
+
+}
+.header ul li>span{
+	 font-family: OpenSans-Italic;
+	color:#bebebd;
+	font-size:150% !important;
+}
+.header-right{
+	background: url('../images/bg_dky.png') no-repeat;
+     background-size: 100% 100%;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 130px;
+
+}
+.header-right .form-group{
+	    margin-bottom: 6px !important;
+}
+.header-right .left,.header-right .left span{
+	color:#785309 !important;
+	font-size: 100%;
+}
+.header-left{
+	padding-bottom: 10px;
+	    padding-left: 17%;
+}
+.header-right .left input{
+	width: 110% !important;
+}
+.right p{
+	color:#785309;
+}
+.header-bottom{
+	min-height: 12em;
+    background: #fb544e;
+}
+.header-bottom span{
+	color:white;
+	font-family: OpenSans-Light;
+	font-size: 12px;
+
+}
+.header-bottom p{
+	padding-top: 30px;
+    line-height: 30px;
+}
+
+/*Content*/
+.content .row ul li {
+    line-height: 20px !important;
+}
+/*End Content*/
+
+/*Slide ngang*/
+.slidengang li h1,.slidengang li p{
+	font-size: 70%;
+}
+.slidengang ul{
+	line-height: 100% !important;
+}
+/*End Slide ngang*/
+.freeship .text1{
+color: #ffffff;
+font-family: OpenSans-Light;
+font-size: 150% !important;
+}
+.freeship .text2{
+color: #ffffff;	
+font-family: OpenSans-Light;font-size: 150% !important;
+}
+
+}
+/*---------------------------------------------------------End Begin < 768px----------------------------------------------*/
+/*---------------------------------------------------------begin > 768px;-------------------------------------------------*/
+@media screen and (min-width: 768px) {
+	.header-right{
+	background: url('../images/bg_dky.png') no-repeat;
+	    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 120px;
+    background-size: 100% 100%;
+    margin-top: 20px;
+}
+
+.input .form-control,.form-group {
+    margin-bottom: 6px !important;
+}
+.header{
+	background: url('../images/bg_nenhuongle1.png') no-repeat;
+	background-size: 100% 100%;
+	max-width: 100%;
+	min-height: 63.9em;
+	padding-top:4em;
+	padding-left: 13em;
+	position: relative;
+
+}
+.header h1{
+	color:#ccac86;
+	font-size: 20px;
+	font-family: OpenSans-Light;
+}
+.header ul{
+	padding-top: 4em;
+}
+.header ul li{
+	line-height: 7em;
+}
+.header ul li span{
+	 font-family: OpenSans-Italic;
+	color:#bebebd;
+	font-size: 20px;
+}
+/**/
+
+.header-right .left button{
+	background-color: #785309;
+	color:#ead3b8;
+
+}
+.header-right .left input{
+	padding-left: 0;
+}
+.header-right .left,.header-right .left span{
+	color:#785309;
+	font-size: 100%;
+}
+.header .free-ship{
+	overflow:hidden !important;
+}
+.header-bottom{
+	min-height: 12em;
+    background: #fb544e;
+}
+.header-bottom span{
+	color:white;
+	font-family: OpenSans-Light;
+	font-size: 3em;
+
+}
+.header-bottom p{
+	padding-top: 30px;
+    line-height: 30px;
+}
+.header .form{
+    padding-top: 110px;
+    padding-right: 10%;
+}
+
+}
+/*--------------------------------------------End begin > 768px;-----------------------------------------------------*/
+/*Video*/
+.header-right .form-control{
+	background-color: #f1dac0;
+}
+.video{
+	    padding-top: 40px;
+	    background-color: #222222;
+	        padding-bottom: 25px;
+}
+.video p{
+	color: #f5d7ed;
+	text-align: left;
+	font-family: OpenSans-Light;
+	font-size: 12px;
+}
+/*End video*/
+
+/*Content*/
+.logo2{
+	 margin-top: -70px;
+}
+.content{
+	padding-top: 20px;
+	    padding-bottom: 25px;
+}
+.content ul li{
+	line-height: 30px;
+}
+.content .col-sm-8>ul{
+	padding-top: 46px;
+}
+.content .col-sm-8 ul li{
+	line-height: 50px;
+}
+.content .col-sm-8 ul li ul{
+	padding-left: 45px;
+}
+.content .col-sm-8 li span{
+	font-family: OpenSans-Light;
+	font-size: 15px;
+	    padding-left: 20px;
+}
+.content .col-sm-8 .muangay{
+	background-color: #32c254;
+}
+.content .col-sm-8 .muangay span:first-child{
+	color:#fff;
+	  font-family:OpenSans-Bold;
+	  font-size: 20px;
+}
+.content .col-sm-8 .muangay span:last-child{
+	color:#fff;
+	  font-size: 20px;
+}
+/*End Content*/
+/*Slide ngang*/
+.slidengang{
+	font-family: OpenSans-Light;
+	font-size: 20px;padding-bottom: 53px;
+}
+.slidengang ul{
+	    line-height: 45px;
+    margin: 20px 0px;
+}
+/*End Slide ngang*/
+
+/*freeship*/
+.freeship{
+background-color: #32c254;	
+padding-top: 23px;padding-bottom: 60px;
+
+}
+.freeship img,.freeship .input{
+	padding-top: 23px;
+}
+.freeship .input .form-control,.freeship .form-group {
+    margin-bottom: 20px !important;
+}
+.freeship .text1{
+color: #ffffff;
+font-family: OpenSans-Light;
+font-size: 30px;
+}
+.freeship .text2{
+color: #ffffff;	
+font-family: OpenSans-Light;font-size: 26px;
+}
+.freeship-left p{
+	font-family: OpenSans-Light;
+	font-size: 15px;
+	color: #ffffff;
+}
+.freeship-right .form-group .form-control,.freeship-right .form-group input{
+	font-family: OpenSans-Italic;
+}
+.freeship-right .form-group button{
+	background-color: #fb544e;
+	    color: white;
+}
+.freeship-right .form-group button .left span{
+color: #ffffff;	
+font-size: 100%;
+}
+.freeship-right .form-group button .right span{
+	color: #ffffff;	
+	font-size: 100%;
+}
+.freeship .freeship-bottom p{
+	font-family: OpenSans-Light;
+	font-size: 17px;
+	color: #ffffff;
+}
+/*End freeship*/
+
+/*Footer*/
+.footer{
+	padding-top: 25px;
+	padding-bottom: 10px;
+}
+.footer p{
+	font-size:150%;
+}
+.footer .padding{
+	padding-bottom: 10px;
+}
+/*End Footer*/
+   
+
+
+
